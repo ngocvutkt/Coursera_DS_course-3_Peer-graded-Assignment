@@ -1,0 +1,42 @@
+---
+title: "Codebook"
+author: "vN"
+date: "2022-12-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+The run_analysis.R script performs the data preparation and then followed by the 5 steps required as described in the course project’s definition.
+
+Download the dataset
+Dataset downloaded and extracted under the folder called UCI HAR Dataset
+
+Load activity labels using file 'activity_labels.txt'
+
+Load data column names using file 'features.txt'
+
+Load and process X_train & y_train data
+
+	Load data
+	Assign each data to variables
+	
+	Extract only the measurements on the mean and standard deviation for each measurement.
+	
+	Load activity data
+	
+	Bind data
+	
+Load and process test data (similar to train data)
+
+Merge test and train data
+
+Apply mean function to dataset using dcast function --> get tidy data
+
+Export tidy data to file: 'tidy_data.txt'
+
+End.
